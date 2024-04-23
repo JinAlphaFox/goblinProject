@@ -22,6 +22,17 @@ function generTable(db, table, ligne) {
     };
 };
 
+function connexion() {
+    const mdp = document.querySelector(".mdp");
+    console.log(mdp.value)
+
+    if (mdp.value === "test") {
+        console.log("connexion succesfull")
+    }else{
+        console.log("connexion echec")
+    }
+};
+
 async function generate() {
 
     const reponse1 = await fetch("http://localhost:8081/html");
@@ -38,6 +49,7 @@ async function generate() {
     const boutonCSS = document.querySelector(".btn-css");
     const boutonJS = document.querySelector(".btn-js");
     const boutonGIT = document.querySelector(".btn-git");
+    const boutonLOG = document.querySelector(".btn-log");
 
     let ligneTableau = 
         `<tr>
@@ -63,6 +75,10 @@ async function generate() {
 
     boutonGIT.addEventListener("click", function() {
         generTable(git, tableau, ligneTableau);
+    });
+
+    boutonLOG.addEventListener("click", function() {
+        connexion();
     });
 
 };

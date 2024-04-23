@@ -40,6 +40,10 @@ async function generate() {
     const boutonJS = document.querySelector(".btn-js");
     const boutonGIT = document.querySelector(".btn-git");
 
+    let typeAjout = document.querySelector("[name=tableau]");
+
+    const formulaireAjout = document.querySelector(".ajout");
+
     let ligneTableau = 
         `<caption><i class="fa-regular fa-hand-point-down fa-flip-vertical"></i></caption>
         <tr>
@@ -65,6 +69,61 @@ async function generate() {
 
     boutonGIT.addEventListener("click", function() {
         generTable("Git", git, tableau, ligneTableau);
+    });
+
+    formulaireAjout.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let baliseInput = "";
+        if (typeAjout.value === "HTML") {
+            baliseInput = "&lt" + event.target.querySelector("[name=balise]").value + "&gt";
+        }else {
+            baliseInput = event.target.querySelector("[name=balise]").value;
+        };
+        const ajout = {
+            balise: baliseInput,
+            arguments: event.target.querySelector("[name=arguments]").value,
+            description: event.target.querySelector("[name=description]").value,
+            source: event.target.querySelector("[name=source]").value,
+            url: event.target.querySelector("[name=url]").value,
+            posteur: "AlphaFox",
+            disponibilité: true
+        };
+
+        const chargeUtile = JSON.stringify(ajout);
+
+        switch (typeAjout.value) {
+            case "HTML" : 
+                fetch("http://localhost:8081/html", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: chargeUtile
+                });
+            break;
+            case "CSS" :
+                fetch("http://localhost:8081/css", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: chargeUtile
+                });
+            break;
+            case "JS" :
+                fetch("http://localhost:8081/javascript", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: chargeUtile
+                });
+            break;
+            case "GIT" :
+                fetch("http://localhost:8081/git", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: chargeUtile
+                });
+            break;
+            default:
+
+        }
+
     });
 
 };

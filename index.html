@@ -32,6 +32,27 @@
     <main>
         <table class="tableau">
         </table>
+        <form class="ajout">
+            <table>
+                <tr>
+                    <td class="col1"><input type="text" name="balise" placeholder="Balise/code"></td>
+                    <td class="col2"><input type="text" name="arguments" placeholder="Arguments"></th>
+                    <td class="col3"><input type="text" name="description" placeholder="Description"></th>
+                    <td class="col4"><input type="text" name="source" placeholder="Nom de la source"></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="url" placeholder="Url de la source"></td>
+                    <td colspan="2"><input list="tableaux" name="tableau"></td>
+                </tr>
+            </table>
+            <button>Ajouter</button>
+        </form>
+        <datalist id="tableaux">
+          <option value="HTML">
+          <option value="CSS">
+          <option value="JS">
+          <option value="GIT">
+        </datalist>
     </main>
 
     <footer>

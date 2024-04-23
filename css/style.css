@@ -88,6 +88,14 @@ td {
     width: 35%;
 }
 
+td input {
+    width: 95%;
+}
+
+.btn-ajout {
+    width: 100%;
+}
+
 /******** footer ******/
 
 footer {

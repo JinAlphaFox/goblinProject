@@ -1,20 +1,21 @@
-function generTable(db, table, ligne) {
+function generTable(titre, db, table, ligne) {
     ligne = 
-    `<tr>
-        <th>Balise</th>
-        <th>Arguments</th>
-        <th>Description</th>
-        <th>Source</th>
+    `<caption>${titre} (${db.length})</caption>
+    <tr>
+        <th class="col1">Balise</th>
+        <th class="col2">Arguments</th>
+        <th class="col3">Description</th>
+        <th class="col4">Source</th>
     </tr>`
     table.innerHTML = ligne;
 
     for (let i = 0; i < db.length; i++) {
         ligne = 
             `<tr>
-                <td>${db[i].balise}</td>
-                <td>${db[i].arguments}</td>
-                <td>${db[i].description}</td>
-                <td><a href="${db[i].url}" title="${db[i].posteur}">${db[i].source}</a></td>
+                <td class="col1">${db[i].balise}</td>
+                <td class="col2">${db[i].arguments}</td>
+                <td class="col3">${db[i].description}</td>
+                <td class="col4"><a href="${db[i].url}" title="${db[i].posteur}">${db[i].source}</a></td>
             </tr>
             `;
         
@@ -40,29 +41,30 @@ async function generate() {
     const boutonGIT = document.querySelector(".btn-git");
 
     let ligneTableau = 
-        `<tr>
-            <th>Balise</th>
-            <th>Arguments</th>
-            <th>Description</th>
-            <th>Source</th>
+        `<caption><i class="fa-regular fa-hand-point-down fa-flip-vertical"></i></caption>
+        <tr>
+            <th class="col1">Balise</th>
+            <th class="col2">Arguments</th>
+            <th class="col3">Description</th>
+            <th class="col4">Source</th>
         </tr>`
     
     tableau.innerHTML = ligneTableau;
 
     boutonHTML.addEventListener("click", function() {
-        generTable(html, tableau, ligneTableau);
+        generTable("HTML", html, tableau, ligneTableau);
     });
 
     boutonCSS.addEventListener("click", function() {
-        generTable(css, tableau, ligneTableau);
+        generTable("CSS", css, tableau, ligneTableau);
     });
 
     boutonJS.addEventListener("click", function() {
-        generTable(js, tableau, ligneTableau);
+        generTable("JavaScript", js, tableau, ligneTableau);
     });
 
     boutonGIT.addEventListener("click", function() {
-        generTable(git, tableau, ligneTableau);
+        generTable("Git", git, tableau, ligneTableau);
     });
 
 };

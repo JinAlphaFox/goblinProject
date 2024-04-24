@@ -25,6 +25,9 @@ function generTable(titre, db, table, ligne) {
 
 async function generate() {
 
+    /**
+     * lignes à remettre en services pour modification en direct de la database
+     *
     const reponse1 = await fetch("http://localhost:8081/html");
     const reponse2 = await fetch("http://localhost:8081/css");
     const reponse3 = await fetch("http://localhost:8081/javascript");
@@ -33,6 +36,12 @@ async function generate() {
     const css = await reponse2.json();
     const js = await reponse3.json();
     const git = await reponse4.json();
+    */
+    /**
+     * Mode hors-ligne
+     */
+    const reponse = await fetch("database.json");
+    const database = await reponse.json();
     
     const tableau = document.querySelector(".tableau");
     const boutonHTML = document.querySelector(".btn-html");
@@ -55,6 +64,27 @@ async function generate() {
     
     tableau.innerHTML = ligneTableau;
 
+    /**
+     * Mode En-ligne
+     */
+    boutonHTML.addEventListener("click", function() {
+        generTable("HTML", database.html, tableau, ligneTableau);
+    });
+
+    boutonCSS.addEventListener("click", function() {
+        generTable("CSS", database.css, tableau, ligneTableau);
+    });
+
+    boutonJS.addEventListener("click", function() {
+        generTable("JavaScript", database.javascript, tableau, ligneTableau);
+    });
+
+    boutonGIT.addEventListener("click", function() {
+        generTable("Git", database.git, tableau, ligneTableau);
+    });
+    /**
+     * Monde En-ligne
+     *
     boutonHTML.addEventListener("click", function() {
         generTable("HTML", html, tableau, ligneTableau);
     });
@@ -70,7 +100,7 @@ async function generate() {
     boutonGIT.addEventListener("click", function() {
         generTable("Git", git, tableau, ligneTableau);
     });
-
+    *    
     formulaireAjout.addEventListener("submit", function (event) {
         event.preventDefault();
         let baliseInput = "";
@@ -125,6 +155,7 @@ async function generate() {
         }
 
     });
+    */
 
 };
 

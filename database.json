@@ -1,0 +1,339 @@
+{
+    "html": [
+      {
+        "id": 1,
+        "balise": "&lt!DOCTYPE&gt",
+        "arguments": "html",
+        "description": "1ère balise html",
+        "source": "Openclassrooms",
+        "url": "#",
+        "posteur": "AlphaFox",
+        "disponibilite": true
+      },
+      {
+        "id": 2,
+        "balise": "&lthtml&gt",
+        "arguments": "lang=\"fr\"",
+        "description": "Affichage de la langue",
+        "source": "Openclassrooms",
+        "url": "#",
+        "posteur": "AlphaFox",
+        "disponibilite": true
+      },
+      {
+        "balise": "&lthead&gt",
+        "arguments": "Inconu",
+        "description": "en-tête du code",
+        "source": "Oppenclassrooms",
+        "url": "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061261-creez-votre-premiere-page-web-en-html",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 3
+      },
+      {
+        "balise": "&ltbody&gt",
+        "arguments": "Inconu",
+        "description": "corps du code",
+        "source": "Oppenclassrooms",
+        "url": "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061261-creez-votre-premiere-page-web-en-html",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 4
+      }
+    ],
+    "css": [
+      {
+        "id": 1,
+        "balise": "*",
+        "arguments": "",
+        "description": "Balise universelle",
+        "source": "Openclassrooms",
+        "url": "#",
+        "posteur": "AlphaFox",
+        "disponibilite": true
+      },
+      {
+        "balise": "display",
+        "arguments": "block, flex, ect...",
+        "description": "change l'affichage d'un élément",
+        "source": "Oppenclassrooms",
+        "url": "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061261-creez-votre-premiere-page-web-en-html",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 2
+      }
+    ],
+    "javascript": [],
+    "git": [
+      {
+        "balise": "cd",
+        "arguments": "~/xxx",
+        "description": "Permet de se déplacer dans les dossiers",
+        "source": "Openclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 1
+      },
+      {
+        "balise": "mkdir",
+        "arguments": "xxx",
+        "description": "Créer un dossier",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 2
+      },
+      {
+        "balise": "git config",
+        "arguments": "--global user.name \"John Doe\"",
+        "description": "Configuration, supprimer --global pour un dossier unique",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 3
+      },
+      {
+        "balise": "git config",
+        "arguments": "-- global user.email johndoe@exemple.com",
+        "description": "Configuration",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 4
+      },
+      {
+        "balise": "git",
+        "arguments": "init",
+        "description": "Dossier cacher de configuration",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 5
+      },
+      {
+        "balise": "git",
+        "arguments": "config --list",
+        "description": "Voir toutes les configs",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 6
+      },
+      {
+        "balise": "touch",
+        "arguments": "xxx",
+        "description": "Créer un fichier",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 7
+      },
+      {
+        "balise": "git",
+        "arguments": "status",
+        "description": "voir les fichiers du projet. En rouge les non indexés",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 8
+      },
+      {
+        "balise": "git",
+        "arguments": "add xxx.xxx",
+        "description": "index le(s) fichier(s). Fonctionne aussi avec un dossier",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 9
+      },
+      {
+        "balise": "git commit",
+        "arguments": "-m \"description: blabla\"",
+        "description": "envoi les fichiers indexé avec une description. Ne pas mettre d'arguments pour ouvrir un éditeur de description",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 10
+      },
+      {
+        "balise": "git push",
+        "arguments": "origin main",
+        "description": "Met à jour les références distantes ainsi que les objets associés",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 11
+      },
+      {
+        "balise": "git branch",
+        "arguments": "exemple",
+        "description": "Créer une nouvelle branche nommé exemple. Enlever l'argument pour voir les branches présentes du projet",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 12
+      },
+      {
+        "balise": "git checkout",
+        "arguments": "exemple",
+        "description": "Bascule sur la branche exemple",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 13
+      },
+      {
+        "balise": "git merge",
+        "arguments": "exemple",
+        "description": "Fusionne la branche exemple avec celle sur laquelle on se trouve",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 14
+      },
+      {
+        "balise": "git clone",
+        "arguments": "adresseSSH",
+        "description": "Récupère le dossier sur GitHub",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 15
+      },
+      {
+        "balise": "ls",
+        "arguments": "-la",
+        "description": "permet de voir les dossier masqué. Fonctionne sans l'argument pour voir les dossiers non cachés seulement",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 16
+      },
+      {
+        "balise": ":x",
+        "arguments": "(dans l'éditeur de message commit)",
+        "description": "Save and quit",
+        "source": "FautQueJeCherche",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 17
+      },
+      {
+        "balise": "git branch",
+        "arguments": "-M main",
+        "description": "Renomme la branche Master en main",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 18
+      },
+      {
+        "balise": "git branch",
+        "arguments": "-d exemple",
+        "description": "supprime la branche exemple. mettre un -D au lieu de -d pour supprimer avec les modifications",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 19
+      },
+      {
+        "balise": "git stash",
+        "arguments": "(si fichiers indexés mais pas encore commités)",
+        "description": "met de côté le travail indexé",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 20
+      },
+      {
+        "balise": "git stash apply",
+        "arguments": "(se déplacer au préalable sur une nouvelle branche)",
+        "description": "récupère les fichiers mis de côté. Peut prendre en plus \"+stash@{0}\"",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 21
+      },
+      {
+        "balise": "git stash",
+        "arguments": "list",
+        "description": "affiche la liste des stashs",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 22
+      },
+      {
+        "balise": "git log",
+        "arguments": "",
+        "description": "analyse les derniers commits",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 23
+      },
+      {
+        "balise": "git reset ",
+        "arguments": "--hard HEAD^ ou --hard 8premiersCaractères",
+        "description": "supprime le dernier commit ou le spécifié par les caractères",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 24
+      },
+      {
+        "balise": "git commit",
+        "arguments": "--amend -m \"Nouvelle Desc\" ou --amend --no-edit",
+        "description": "permet de modifier la description du dernier commit OU d'ajouter des fichiers au dernier commit, préalablement indexés, sans modification de Desc",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 25
+      },
+      {
+        "balise": "git revert",
+        "arguments": "HEAD^",
+        "description": "Annule un commit pushé en créant un nouveau commit",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 26
+      },
+      {
+        "balise": "git blame",
+        "arguments": "xxx.xxx",
+        "description": "affiche les modifications du fichier avec qui, quand et quoi",
+        "source": "Oppenclassrooms",
+        "url": "",
+        "posteur": "AlphaFox",
+        "disponibilité": true,
+        "id": 27
+      }
+    ]
+  }
